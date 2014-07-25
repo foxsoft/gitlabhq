@@ -16,7 +16,7 @@ production: &base
   gitlab:
     ## Web server settings (note: host is the FQDN, do not include http://)
     host: <%= ENV['HOST'] %>
-    port: 80
+    port: 443
     https: <%= ENV['HTTPS'] %>
 
     # Uncomment and customize the last line to run in a non-root path
@@ -41,7 +41,7 @@ production: &base
     support_email: <%= ENV['SUPPORT_EMAIL'] %>
 
     ## User settings
-    default_projects_limit: 10
+    default_projects_limit: 1000
     # default_can_create_group: false  # default: true
     # username_changing_enabled: false # default: true - User can change her username/namespace
     ## Default theme
@@ -78,7 +78,7 @@ production: &base
       merge_requests: true
       wiki: true
       wall: false
-      snippets: false
+      snippets: true
       visibility_level: "private"  # can be "private" | "internal" | "public"
 
     ## Repository downloads directory
