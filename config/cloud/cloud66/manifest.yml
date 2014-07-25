@@ -1,21 +1,21 @@
 production:
-    rails: 
+    rails:
         server:
             unique_name: frontend
-    redis: 
+    redis:
         server:
             same_as: frontend
 staging:
-    rails: 
+    rails:
         server:
             unique_name: frontend
-    redis: 
+    redis:
         server:
             same_as: frontend
 development:
-    rails: 
+    rails:
         server:
             unique_name: frontend
-    redis: 
+    redis:
         server:
-            same_as: frontend            
+            same_as: frontend
