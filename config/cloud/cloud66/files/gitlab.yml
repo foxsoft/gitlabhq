@@ -16,7 +16,7 @@ production: &base
   gitlab:
     ## Web server settings (note: host is the FQDN, do not include http://)
     host: <%= ENV['HOST'] %>
-    port: 443
+    port: 80
     https: <%= ENV['HTTPS'] %>
 
     # Uncomment and customize the last line to run in a non-root path
